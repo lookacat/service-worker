@@ -55,7 +55,7 @@ export default {
     }),
     resolve({
       browser: true,
-      preferBuilt<pins: false
+      preferBuiltins: false
     }),
     modify({
       'process.env.NODE_ENV': JSON.stringify(production ? 'production' : 'development'),

@@ -1,0 +1,72 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/17.8.0/bin/node /opt/homebrew/bin/yarn
+
+PATH: 
+  /Users/paul/flutter/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/paul/.nvm/versions/node/v16.15.1/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  17.8.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/paul/Library/Caches/Yarn/v6/npm-color-name-1.1.3-a7d0558bd89c42f795dd42328f740831ca53bc25-integrity/node_modules/color-name/LICENSE' -> '/Users/paul/Documents/test/web-service-worker/node_modules/ts-loader/node_modules/color-name/LICENSE'
+
+npm manifest: 
+  {
+    "name": "service-worker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "pnpm rollup && pnpm build:sw",
+      "rollup": "./node_modules/.bin/rollup -c",
+      "build:sw": "npx workbox injectManifest",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "17.1.0",
+      "@rollup/plugin-typescript": "^9.0.2",
+      "rollup": "2.78.0",
+      "rollup-plugin-babel": "^4.4.0",
+      "rollup-plugin-modify": "^3.0.0",
+      "rollup-plugin-node-resolve": "^5.2.0",
+      "rollup-plugin-polyfill-node": "^0.11.0",
+      "ts-loader": "6.2.1",
+      "workbox-cli": "^6.5.4",
+      "workbox-window": "^6.5.4"
+    },
+    "dependencies": {
+      "@babel/polyfill": "^7.12.1",
+      "@noble/hashes": "^1.1.3",
+      "@rollup/plugin-alias": "3.1.9",
+      "axios": "^1.1.3",
+      "browserify": "^17.0.0",
+      "noble": "^1.9.1",
+      "owncloud-sdk": "~3.0.0-alpha.17",
+      "path": "^0.12.7",
+      "pbkdf2": "link:@noble/hashes/pbkdf2",
+      "qs": "^6.10.3",
+      "sax": "^1.2.4",
+      "sha512": "link:@noble/hashes/sha512",
+      "typescript": "^4.8.4",
+      "utf8": "^3.0.0",
+      "uuid": "^9.0.0",
+      "workbox-precaching": "^6.5.4",
+      "xml-js": "^1.6.11",
+      "zlib": "^1.0.5"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
