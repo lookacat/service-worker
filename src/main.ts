@@ -5,7 +5,7 @@ import OwnCloud from 'owncloud-sdk'
 
 declare const self: any
 
-const sdk = OwnCloud()
+const sdk = new OwnCloud()
 console.log(sdk)
 
 precacheAndRoute(self.__WB_MANIFEST, {

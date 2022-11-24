@@ -51,7 +51,7 @@ export default {
     nodePolyfills(),
     inject({
       Buffer: ['buffer', 'Buffer'],
-      XMLHttpRequest: ['xhr-shim', 'XMLHttpRequest'],
+      XMLHttpRequest: 'xhr-shim'
     }),
     resolve({
       browser: true,
